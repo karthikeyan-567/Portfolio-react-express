@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 
-let port = process.env.MY_PORT;
+let port = 5000;
 
 
 let app = express();
