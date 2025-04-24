@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite", 
     "start": "node index.js",
-    "build": "vite build echo && 'no build needed for Express'" ,
+    "build": "vite build " ,
     "lint": "eslint .",
     "preview": "vite preview"
   },
