@@ -4,14 +4,16 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 
-let port = 5000;
+let port = 3000;
 
 
 let app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.get("/",(req,res)=>{
+  res.send("server is running")
+})
 app.post("/bulkmail", async (req, res) => {
   const { sender, subject, context } = req.body;
 

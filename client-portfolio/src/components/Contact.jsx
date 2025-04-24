@@ -1,20 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-
+ let url = "https://portfolio-react-express-backend.onrender.com"
 const Contact = () => {
  const[context , Setcon] = useState("")
   const[subject , Setsub ] = useState("")
   const[sender , Setemail ] = useState("")
 
     let handlemail =()=>{
-      let email = axios.get("https://portfolio-react-express-backend.onrender.com/bulkmail", {
-        params: {
-          context,
-          subject,
-          sender
-        }
-      });
+      let email = axios.post(`${url}/bulkmail`, {context , subject , sender});
       
      email.then((data)=>{
         console.log(data.data);
