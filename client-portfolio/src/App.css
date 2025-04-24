@@ -1,0 +1,170 @@
+body{
+    background-color: #000000;
+}
+
+svg{
+	font-family: "Reenie Beanie", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 50px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+.introCard{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 450px;
+    background: linear-gradient(135deg, #0f0f1c, #162447, #1f4068, #253b5c);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid #1e90ff26;
+    border-radius: 2%;
+    
+}
+.introCard-header{
+    font-size: 30px;
+    font-weight: bolder;
+   position: absolute;
+   left: 500px;
+   font-style: italic;
+   top: 90px;
+   background: linear-gradient(90deg, #00ffe7, #38b6ff, rgba(0, 81, 255, 0.832), #a908ffdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: moveGradient 5s ease infinite;
+}
+@keyframes moveGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.imgCard{
+    position: relative;
+    padding: 10px;
+    background-color: #021526;
+    width: 400px;
+    height:90%;
+    display: flex;
+align-items: center;
+    flex-direction:column ;
+    top: 20px;
+    left: 20px;
+    border-radius:10px 40px ;
+}
+.imgCard img{
+    position: relative;
+    top: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius:10px 20px ;
+}
+.imgCard p{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    font-size: 15px;
+    left: 20px;
+    text-align: start;
+}
+.imgCard p:hover{
+    color: #f72585;
+}
+.description-con{
+    position: relative;
+    left: 470px;
+    bottom: 300px;
+    /* background-color:#ffba08; */
+    width: 600px ;
+    height: 300px;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+.description-con p{
+    font-style: italic;
+    position: relative;
+    bottom: 50px;
+    }
+
+
+.project-con{
+    background-color: black;
+    margin-top: 50px;
+    height: 100vh;
+}
+.project-ttle{
+    color: white;
+    font-size:50px ;
+    text-align: center;
+
+}
+.Card-project{
+    border-radius:30px ;
+}
+.Card-project img{
+    border-radius:20px ;
+    width: 430px;
+    height: 200px;
+}
+
+
+
+
+@media screen and (max-widht:600px) {
+    .project-Card-con {
+    transform: scale(2);
+    }
+}
+.CvBtn:hover{
+background-color: rgba(255, 0, 0, 0.553);
+box-shadow: 1px 1px black;
+transition: 0.2s;
+cursor: pointer;
+}
+.asidemenu{
+    align-items: center ;
+}
+
+.asidemenu li{
+    Border:solid 1px black;
+    
+    padding-inline:15px ;
+    width: fit-content;
+
+}
+.asidemenu li:hover {
+    border-bottom :solid 1px white  ;
+    border-left :solid 4px white  ;
+    border-radius: 5px;
+   
+}
+.aside-bar{
+    transition: 0.7s;
+    
+
+}
+.backarrow:hover{
+ 
+   cursor: pointer;
+   opacity: 0.5;
+}
