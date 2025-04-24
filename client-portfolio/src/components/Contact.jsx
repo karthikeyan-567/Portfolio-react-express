@@ -8,7 +8,7 @@ const Contact = () => {
   const[sender , Setemail ] = useState("")
 
     let handlemail =()=>{
-     let email = axios.post("https://portfolio-react-express-backend.onrender.com" , { context , subject , sender})
+     let email = axios.post("https://portfolio-react-express-backend.onrender.com/bulkmail" , { context , subject , sender})
      email.then((data)=>{
         console.log(data.data);
         
