@@ -8,7 +8,7 @@ function Footer() {
         <h2 className="text-2xl font-semibold mb-4">Let’s Connect!</h2>
         <div className="flex justify-center space-x-6 mb-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/karthikeyan-567"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
@@ -16,7 +16,7 @@ function Footer() {
             <Github size={28} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="www.linkedin.com/in/karhtikeyan005"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
@@ -24,7 +24,7 @@ function Footer() {
             <Linkedin size={28} />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:230704.it@rmkec.ac.in"
             className="hover:text-white"
           >
             <Mail size={28} />
