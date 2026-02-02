@@ -49,7 +49,7 @@ const [asidemenu , Setmenu] = useState(false)
           {" "}
           About <span className="text-[#3DC2EC] ">Me</span>
         </h1>
-        <h1 className="introCard-header">J karthikeyan... </h1>
+        <h1 className="introCard-header ">J karthikeyan... </h1>
         <Descrip></Descrip>
        
       </div>

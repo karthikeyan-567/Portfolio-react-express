@@ -1,32 +1,71 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
-import tripad from '../assets/tripad.jpeg'
-import udemy from '../assets/udemy.jpeg'
-import greenden from '../assets/greenden.jpeg'
-import ecom from '../assets/ecom.jpg'
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Link } from 'react-router-dom'
+import React from "react";
 
-export default function Project() {
-     useEffect(() => {
-       AOS.init({
-         duration: 1000, // animation duration in ms
-         once: true      // whether animation should happen only once - while scrolling down
-       });
-     }, []);
+const Projects = () => {
   return (
-    <div id='projects'>
-      <div className='project-con'>
-        <h1 className='project-ttle'>OUR <span className='text-[#3DC2EC]'>PROJECTS</span> </h1>
-        <div data-aos='flip-left' className='flex gap-10 justify-around flex-wrap relative right-[50px]  top-[20px]'>
-        <ProjectCard  img = {ecom}></ProjectCard>
-        <ProjectCard img = {udemy}></ProjectCard>
-        <ProjectCard img = {greenden}></ProjectCard>
-        <ProjectCard img = {tripad}></ProjectCard>
-        </div>
+    <section className="w-full px-6 py-20 bg-black text-white">
+      
+      {/* Section Header */}
+      <div className="text-center mb-14">
+        <h2 className="text-4xl font-semibold">Projects</h2>
+        <p className="text-gray-400 mt-2">
+          Real-World Applications I’ve Built
+        </p>
       </div>
-    </div>
-  )
-}
+
+      {/* Projects Grid */}
+      <div className="grid gap-8 md:grid-cols-3">
+
+        {/* SkillSync */}
+        <div className="bg-gradient-to-br from-[#0f172a] to-[#020617]
+                        border border-blue-900 rounded-2xl p-6 shadow-xl
+                        hover:scale-105 transition duration-300">
+          <h3 className="text-xl font-semibold text-blue-400 mb-2">
+            SkillSync
+          </h3>
+          <p className="text-gray-300 text-sm mb-4">
+            MERN stack application focused on skill profiling and employability
+            readiness with a responsive ERB-style dashboard.
+          </p>
+          <p className="text-sm text-blue-300">
+            MongoDB · Express · React · Node · Tailwind
+          </p>
+        </div>
+
+        {/* Avartana Care */}
+        <div className="bg-gradient-to-br from-[#0f172a] to-[#020617]
+                        border border-blue-900 rounded-2xl p-6 shadow-xl
+                        hover:scale-105 transition duration-300">
+          <h3 className="text-xl font-semibold text-blue-400 mb-2">
+            Avartana Care
+          </h3>
+          <p className="text-gray-300 text-sm mb-4">
+            Ayurveda healthcare platform with Doctor, Patient, and Admin
+            dashboards built using React and Tailwind CSS.
+          </p>
+          <p className="text-sm text-blue-300">
+MongoDB · Express · React · Node · Tailwind · JavaScript          </p>
+        </div>
+
+        {/* Thiruvallur Quiz Platform */}
+        <div className="bg-gradient-to-br from-[#0f172a] to-[#020617]
+                        border border-blue-900 rounded-2xl p-6 shadow-xl
+                        hover:scale-105 transition duration-300">
+          <h3 className="text-xl font-semibold text-blue-400 mb-2">
+            Thiruvallur Student Quiz Platform
+          </h3>
+          <p className="text-gray-300 text-sm mb-4">
+            Educational quiz website developed for school students to improve
+            knowledge through interactive quizzes and instant feedback.
+          </p>
+          <p className="text-sm text-blue-300">
+            HTML · CSS · JavaScript · React
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
+  

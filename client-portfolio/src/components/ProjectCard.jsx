@@ -1,14 +1,19 @@
-import React from 'react'
-
-const ProjectCard = (data) => {
+export default function ProjectCard({ img, title, desc, tech }) {
   return (
-    <div>
-      <div className='Card-project bg-[#1E3E62] w-[450px] p-1 py-2  flex justify-center  relative left-20 '>
-        <img className='w-[97%] h-[80%] ' src={data.img} alt="" />
-        <div></div>
-      </div>
+    <div className="project-card">
+      <img src={img} alt={title} className="rounded-xl" />
+
+      <h2 className="mt-4 text-xl font-semibold text-white">
+        {title}
+      </h2>
+
+      <p className="text-gray-300 text-sm mt-2">
+        {desc}
+      </p>
+
+      <p className="text-[#3DC2EC] text-xs mt-3">
+        {tech}
+      </p>
     </div>
   )
 }
-
-export default ProjectCard

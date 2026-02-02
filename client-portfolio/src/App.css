@@ -28,7 +28,7 @@ svg text {
     position: relative;
     margin: auto;
     width: 90%;
-    height: 450px;
+    height: 550px;
     background: linear-gradient(135deg, #0f0f1c, #162447, #1f4068, #253b5c);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
     border: 1px solid #1e90ff26;
@@ -41,7 +41,7 @@ svg text {
    position: absolute;
    left: 500px;
    font-style: italic;
-   top: 90px;
+   top: 100px;
    background: linear-gradient(90deg, #00ffe7, #38b6ff, rgba(0, 81, 255, 0.832), #a908ffdb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,11 +64,11 @@ svg text {
     padding: 10px;
     background-color: #021526;
     width: 400px;
-    height:90%;
+    height:95%;
     display: flex;
 align-items: center;
     flex-direction:column ;
-    top: 20px;
+    top: 10px;
     left: 20px;
     border-radius:10px 40px ;
 }
@@ -76,7 +76,7 @@ align-items: center;
     position: relative;
     top: 10px;
     width: 300px;
-    height: 200px;
+    height:250px;
     border-radius:10px 20px ;
 }
 .imgCard p{
@@ -93,7 +93,7 @@ align-items: center;
 .description-con{
     position: relative;
     left: 470px;
-    bottom: 300px;
+    bottom: 350px;
     /* background-color:#ffba08; */
     width: 600px ;
     height: 300px;
